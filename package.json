@@ -1,0 +1,48 @@
+{
+  "name": "pip-services-beacons-node",
+  "version": "1.0.0",
+  "description": "Beacon positioning microservice",
+  "main": "./obj/src/index.js",
+  "typings": "./obj/src/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch",
+    "test": "mocha -t 5000 -R spec -u tdd --recursive ./obj/test",
+    "test-tc": "mocha -t 5000 -R mocha-teamcity-reporter -u tdd --recursive ./obj/test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/pip-services-iot/pip-services-beacons-node.git"
+  },
+  "keywords": [
+    "pip-services",
+    "iot",
+    "beacons"
+  ],
+  "author": "Sergey Seroukhov <seroukhov@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://githib.com/pip-services-iot/pip-services-beacons-node/issues"
+  },
+  "homepage": "https://github.com/pip-services-iot/pip-services-beacons-node#README",
+  "dependencies": {
+    "pip-services3-commons-node": "^3.0.0",
+    "pip-services3-components-node": "^3.0.0",
+    "pip-services3-container-node": "^3.0.0",
+    "pip-services3-data-node": "^3.0.0",
+    "pip-services3-aws-node": "^3.0.0",
+    "pip-services3-rpc-node": "^3.0.0",
+    "pip-services3-mongodb-node": "^3.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "*",
+    "@types/lodash": "*",
+    "@types/async": "*",
+    "@types/chai": "*",
+    "@types/mocha": "*",
+    "chai": "*",
+    "mocha": "*",
+    "mocha-teamcity-reporter": "^1.1.1",
+    "restify": "^4.3.0"
+  }
+}
